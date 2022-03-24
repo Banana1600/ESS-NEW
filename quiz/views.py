@@ -177,7 +177,7 @@ def admin_check_marks_view(request,pk):
 
     results= models.Result.objects.all().filter(exam=course).filter(student=student)
     return render(request,'quiz/admin_check_marks.html',{'results':results})
-    
+
 
 def aboutus_view(request):
     return render(request,'quiz/aboutus.html')
