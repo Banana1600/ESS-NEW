@@ -15,7 +15,7 @@
     <title>Exam Stores System</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!--
 
@@ -27,9 +27,9 @@ https://templatemo.com/tm-570-chain-app-dev
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
-    <link rel="stylesheet" href="ssets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="{% static 'css/templatemo-chain-app-dev.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animated.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
     <style>
         h2 {
             font-size: 20px;
@@ -59,14 +59,19 @@ https://templatemo.com/tm-570-chain-app-dev
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <!-- <img src="assets/images/logo.png" alt="Chain App Dev"> -->
+                        <a href="#" class="logo">
+                            <img src="{% static 'images/ExamLogo.PNG' %}" alt="Chain App Dev">
 
-                            <span>Exam Stores System</span>
+                            <!-- <span>Exam Stores System</span> -->
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
+
+
+                            <li class="scroll-to-section"> <a href=" /student/studentclick">student</a> </li>
+                            <li class="scroll-to-section"> <a href=" /adminclick">teacher</a> </li>
+                            
                             <li class="scroll-to-section"> <a href="#services">subject</a> </li>
                             <li class="scroll-to-section"><a href="#clients">Team</a></li>
                             <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
@@ -97,14 +102,14 @@ https://templatemo.com/tm-570-chain-app-dev
             <div class="social_login">
                 <div class="">
                     <a href="#" class="social_box fb">
-                        <span class="icon"><i class="fab fa-facebook"></i></span>
-                        <span class="icon_title">Connect with Facebook</span>
+                         
+                        <span class="icon_title">Student</span>
 
                     </a>
 
                     <a href="#" class="social_box google">
-                        <span class="icon"><i class="fab fa-google-plus"></i></span>
-                        <span class="icon_title">Connect with Google</span>
+                       
+                        <span class="icon_title">Teacher</span>
                     </a>
                 </div>
 
@@ -189,7 +194,7 @@ https://templatemo.com/tm-570-chain-app-dev
                         </div>
                         <div class="col-lg-6">
                             <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                                <img src="assets/images/quiz.png" alt="">
+                                <img src="{% static 'images/quiz.png' %}" alt="">
                             </div>
                         </div>
                     </div>
@@ -204,7 +209,7 @@ https://templatemo.com/tm-570-chain-app-dev
             <div class="col-lg-8 offset-lg-2">
                 <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
                     <h4>Amazing <em>Services &amp; Features</em> for you</h4>
-                    <img src="assets/images/heading-line-dec.png" alt="">
+                    <img src="{% static 'images/heading-line-dec.png' %}" alt="">
                     <p>อธิบายเกี่ยวกับเว็บไซต์<a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> Blog. If you need to have a contact form PHP script, go to <a href="https://templatemo.com/contact" target="_parent">our contact page</a>                        for more information.
                     </p>
                 </div>
@@ -265,7 +270,7 @@ https://templatemo.com/tm-570-chain-app-dev
                 <div class="col-lg-8 offset-lg-2">
                     <div class="section-heading">
                         <h4>ทีมผู้พัฒนา</h4>
-                        <img src="assets/images/heading-line-dec.png" alt="">
+                        <img src="{% static 'images/heading-line-dec.png' %}" alt="">
                         <p>ในการทำเว็บเพจครั้งนี้เป็นส่วนหนึ่งของวิชาโครงงาน(เอาคำนำมาใส่)</p>
                     </div>
                 </div>
@@ -390,11 +395,11 @@ https://templatemo.com/tm-570-chain-app-dev
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <div class="client-content">
-                                                                <img src="assets/images/quote.png" alt="">
+                                                                <img src="{% static 'images/quote.png' %}" alt="">
                                                                 <p>“คติประจำใจ”</p>
                                                             </div>
                                                             <div class="down-content">
-                                                                <img src="assets/images/31.jpg" alt="">
+                                                                <img src="{% static 'images/31.jpg' %}" alt="">
                                                                 <div class="right-content">
                                                                     <h4>MR.Nakorn Srikasem</h4>
                                                                     <span>Email:61030031@kmitl.ac.th</span>
@@ -404,11 +409,11 @@ https://templatemo.com/tm-570-chain-app-dev
                                                         </div>
                                                         <div class="col-lg-12">
                                                             <div class="client-content">
-                                                                <img src="assets/images/quote.png" alt="">
+                                                                <img src="{% static 'images/quote.png' %}" alt="">
                                                                 <p>“คติประจำใจ”</p>
                                                             </div>
                                                             <div class="down-content">
-                                                                <img src="assets/images/21.png" alt="">
+                                                                <img src="{% static '/images/21.png' %}" alt="">
                                                                 <div class="right-content">
                                                                     <h4>MR.Nattapat Srisanum</h4>
                                                                     <span>Email:61030021@kmitl.ac.th</span>
@@ -417,11 +422,11 @@ https://templatemo.com/tm-570-chain-app-dev
                                                         </div>
                                                         <div class="col-lg-12">
                                                             <div class="client-content">
-                                                                <img src="assets/images/quote.png" alt="">
+                                                                <img src="{% static '/images/quote.png' %}" alt="">
                                                                 <p>“คติประจำใจ”</p>
                                                             </div>
                                                             <div class="down-content">
-                                                                <img src="assets/images/37.png" alt="">
+                                                                <img src="{% static '/images/37.png' %}" alt="">
                                                                 <div class="right-content">
                                                                     <h4>MSS</h4>
                                                                     <span>Email:61030037@kmitl.ac.th</span>
@@ -439,12 +444,12 @@ https://templatemo.com/tm-570-chain-app-dev
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <div class="client-content">
-                                                                <img src="assets/images/quote.png" alt="">
+                                                                <img src="{% static '/images/quote.png' %}" alt="">
                                                                 <p>“CTO, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit
                                                                     massive big blasta.”</p>
                                                             </div>
                                                             <div class="down-content">
-                                                                <img src="assets/images/client-image.jpg" alt="">
+                                                                <img src="{% static '/images/client-image.jpg' %}" alt="">
                                                                 <div class="right-content">
                                                                     <h4>Jake H. Nyo</h4>
                                                                     <span>CTO of Digital Company</span>
@@ -461,12 +466,12 @@ https://templatemo.com/tm-570-chain-app-dev
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <div class="client-content">
-                                                                <img src="assets/images/quote.png" alt="">
+                                                                <img src="{% static '/images/quote.png' %}" alt="">
                                                                 <p>“May, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit
                                                                     massive big blasta.”</p>
                                                             </div>
                                                             <div class="down-content">
-                                                                <img src="assets/images/client-image.jpg" alt="">
+                                                                <img src="{% static '/images/client-image.jpg' %}" alt="">
                                                                 <div class="right-content">
                                                                     <h4>May C.</h4>
                                                                     <span>Founder of Catherina Co.</span>
@@ -483,12 +488,12 @@ https://templatemo.com/tm-570-chain-app-dev
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <div class="client-content">
-                                                                <img src="assets/images/quote.png" alt="">
+                                                                <img src="{% static '/images/quote.png' %}" alt="">
                                                                 <p>“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive
                                                                     big blasta.”</p>
                                                             </div>
                                                             <div class="down-content">
-                                                                <img src="assets/images/client-image.jpg" alt="">
+                                                                <img src="{% static '/images/client-image.jpg' %}" alt="">
                                                                 <div class="right-content">
                                                                     <h4>Random Staff</h4>
                                                                     <span>Manager, Digital Company</span>
@@ -505,12 +510,12 @@ https://templatemo.com/tm-570-chain-app-dev
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <div class="client-content">
-                                                                <img src="assets/images/quote.png" alt="">
+                                                                <img src="{% static '/images/quote.png' %}" alt="">
                                                                 <p>“Mark, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit
                                                                     massive big blasta.”</p>
                                                             </div>
                                                             <div class="down-content">
-                                                                <img src="assets/images/client-image.jpg" alt="">
+                                                                <img src="{% static '/images/client-image.jpg' %}" alt="">
                                                                 <div class="right-content">
                                                                     <h4>Mark Am</h4>
                                                                     <span>CTO, Amber Do Company</span>
@@ -553,13 +558,13 @@ https://templatemo.com/tm-570-chain-app-dev
 
 
     <!-- Scripts -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/animation.js"></script>
-    <script src="assets/js/imagesloaded.js"></script>
-    <script src="assets/js/popup.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.js' %}"></script>
+    <script src="{% static 'js/popup.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
 </body>
 
 </html>

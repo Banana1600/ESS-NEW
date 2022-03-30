@@ -16,7 +16,7 @@ from django.contrib.auth.models import User
 def home_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')  
-    return render(request,'quiz/index.html')
+    return render(request,'quiz/index3.html')
 
 
 def is_student(user):
